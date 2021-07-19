@@ -1,0 +1,25 @@
+main {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.hero {
+    background-color: darkcyan;
+    padding-top: 100px;
+    height: 200px;
+    text-align: center;
+}
+
+.text-center {
+    text-align: center;
+  }
+
+  .personal-training {
+      text-align: center;
+      background-color: black;
+      color: darkcyan;
+
+      padding-top: 50px;
+      padding-bottom: 50px;
+  }
