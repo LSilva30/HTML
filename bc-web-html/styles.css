@@ -39,7 +39,7 @@ li {
 }
 
 .menu-link {
-    font-size: 0.62rem;
+    font-size: 0.65rem;
     font-weight: 600;
     text-transform: uppercase;
 }
@@ -55,20 +55,23 @@ main {
 }
 
 section {
-    border: 5px var(--white) solid;
+    height: 300px;
+    text-align: center;
 }
 
 .hero-section {
     height: 600px;
-    background-color: var(--yellow);
     background: url(./img/bocacodeclass.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    
+    background-color: var(--purple);
+    background-blend-mode: screen;
 }
 
-.hero-section > h1 {
-    text-align: center;
+.about-section {
+    background-color: var(--white)
 }
 
 footer {
