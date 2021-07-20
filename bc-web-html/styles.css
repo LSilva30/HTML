@@ -61,6 +61,10 @@ section {
 }
 
 .hero-section {
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+
     height: 600px;
     background: url(./img/bocacodeclass.jpeg);
     background-size: cover;
@@ -72,7 +76,20 @@ section {
 }
 
 .about-section {
+    height: 100%;
+    padding: 5%;
     background-color: var(--white)
+}
+
+.about-section-group {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+article {
+    max-width: 300px;
+    margin-top: 30px;
 }
 
 footer {
