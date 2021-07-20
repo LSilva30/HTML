@@ -42,12 +42,13 @@ li {
     font-size: 0.65rem;
     font-weight: 600;
     text-transform: uppercase;
+    padding-top: 0.60rem;
 }
 
 .login-btn {
     color: var(--orange);
-    float: right
-    
+    float: right;
+    padding-right: 15px;
 }
 
 main {
