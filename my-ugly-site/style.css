@@ -1,3 +1,11 @@
+*,                               /*always start with this code to take away the extra spacing in your site*/
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
 main {
     background-color: black;
     color: white;
@@ -18,16 +26,16 @@ h1 {
     
 }
 
-.text-center {
+button {
     text-align: center;
-
+    color: black;
   }
 
   .personal-training {
       text-align: center;
       background-color: black;
       color: darkcyan;
-      font-size: 40px;
+      font-size: 30px;
 
       /* padding-top: 50px;
       padding-bottom: 50px; */
