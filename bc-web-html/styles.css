@@ -1,0 +1,35 @@
+*,                               /*always start with this code to take away the extra spacing in your site*/
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+:root {
+    --purple: #272262;
+    --pink: #ff216e;
+    --white: #e8e8e8;
+    --yellow: #ffdb02;
+    --orange: #ff5401;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background-color: var(--purple);
+}
+
+main {
+    background-color: var(--pink);
+}
+
+section {
+    border: 5px var(--white) solid;
+}
+
+footer {
+    background-color: var(--orange);
+}
