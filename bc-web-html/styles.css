@@ -19,7 +19,35 @@ body {
 }
 
 header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+
     background-color: var(--purple);
+    height: 30px;
+    color: var(--white);
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    float: left;
+    padding-left: 3%;
+    padding-top: 1%;
+}
+
+.menu-link {
+    font-size: 0.62rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.login-btn {
+    color: var(--orange);
+    float: right
+    
 }
 
 main {
@@ -28,6 +56,19 @@ main {
 
 section {
     border: 5px var(--white) solid;
+}
+
+.hero-section {
+    height: 600px;
+    background-color: var(--yellow);
+    background: url(./img/bocacodeclass.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hero-section > h1 {
+    text-align: center;
 }
 
 footer {
