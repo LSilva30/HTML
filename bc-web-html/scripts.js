@@ -15,9 +15,8 @@ function handleSubmit(event) {
     },
     body: JSON.stringify(newCustomer),
   })
-    .then(response => response.json())
-    .then(message => {
-      form.innerHTML = `<h3>${message}</h3>`
+    .then(() => {
+      form.innerHTML = '<h3>thanks</h3>'
       getCustomers()
     })
     .catch(err => {
