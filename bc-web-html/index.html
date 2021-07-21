@@ -30,51 +30,23 @@
       <!-- <section id="main"> -->
       <section class="about-section">
         <h2>About</h2>
-        <div class="about-section-group">
+        <div id="customers" class="about-section-group">
           <article>
-            <h3>Article 1</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam incidunt necessitatibus tenetur iusto eius aspernatur, molestiae et
-              asperiores quo nihil voluptate odio quidem impedit saepe dignissimos enim! Deleniti, dolore blanditiis.
-            </p>
-          </article>
-          <article>
-            <h3>Article 2</h3>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non, ea explicabo hic reprehenderit tempore perspiciatis dolore expedita error
-              odit fuga ad vitae est. Maxime nobis et architecto eum hic officia.
-            </p>
-          </article>
-          <article>
-            <h3>Article 2</h3>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non, ea explicabo hic reprehenderit tempore perspiciatis dolore expedita error
-              odit fuga ad vitae est. Maxime nobis et architecto eum hic officia.
-            </p>
-          </article>
-          <article>
-            <h3>Article 2</h3>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non, ea explicabo hic reprehenderit tempore perspiciatis dolore expedita error
-              odit fuga ad vitae est. Maxime nobis et architecto eum hic officia.
-            </p>
-          </article>
-          <article>
-            <h3>Article 2</h3>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non, ea explicabo hic reprehenderit tempore perspiciatis dolore expedita error
-              odit fuga ad vitae est. Maxime nobis et architecto eum hic officia.
-            </p>
-          </article>
+            <h3>Loading...</h3>
         </div>
       </section>
 
       <section id="contact">
         <h2>Contact</h2>
         <form onsubmit="handleSubmit(event)">
-          <label for="name">
-            Name:
-            <input type="text" onchange="handleNameChange(event)" name="name" />
+          <label for="firstName">
+            First Name:
+            <input type="text" name="firstName" />
+          </label>
+          <br />
+          <label for="lastName">
+            Last Name:
+            <input type="text" name="lastName" />
           </label>
           <br />
           <label for="email">
@@ -82,12 +54,7 @@
             <input type="email" name="email" />
           </label>
           <br />
-          <label for="message">
-            Message:
-            <textarea name="message" cols="30" rows="4"></textarea>
-          </label>
-          <br />
-          <input type="submit" value="Send" />
+          <input type="submit" value="Save" />
         </form>
       </section>
     </main>
@@ -99,6 +66,6 @@
         <li>Contact</li>
       </ul>
     </footer>
-    <!-- <script src="scripts.js"></script> -->
+    <script src="scripts.js"></script>
   </body>
 </html>

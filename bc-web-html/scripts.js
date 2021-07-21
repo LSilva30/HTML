@@ -1,13 +1,47 @@
 function handleSubmit(event) {
-  event.preventDefault()
-  console.log('Submitted Form')
+  event.preventDefault();
+  console.log('Submitted Form');
+  const form = document.querySelector("form");
+  const newCustomer = {
+      firstName: form.elements.firstName.value,
+      lastName: form.elements.lastName.value,
+      email: form.elements.email.value
+    }
+  console.log(newCustomer)
+  fetch('https://ls-pet-boutique.web.app/customers', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(newCustomer),
+  })
+    .then(response => response.json())
+    .then(message => {
+      form.innerHTML = `<h3>${message}</h3>`
+      getCustomers()
+    })
+    .catch(err => {
+      form.innerHTML = '<h3>Error sending customer</h3>'
+    })
 }
 function handleNameChange() {
   console.log('Name Changed', event.target.value)
 }
-const hero = document.getElementById('hero')
-hero.innerText = "This is my new Hero Title"
-const links = document.getElementsByClassName('menu-link')
-links[1].style.color = "white"
-const footer = document.querySelector('footer')
-footer.style.backgroundColor = "grey"
+
+function getCustomers() {
+fetch('https://ls-pet-boutique.web.app/customers')
+.then(response => response.json())
+.then(data => {
+  const custDiv = document.getElementById('customers')
+  const custArray = data.map(customer => {
+    return `<article>
+      <h3>${customer.firstName} ${customer.lastName}</h3>
+      <p>${customer.email}</p>
+    </article>`
+  })
+  custDiv.innerHTML = custArray.join('')
+})
+.catch(err => console.log(err))
+}
+
+getCustomers()
